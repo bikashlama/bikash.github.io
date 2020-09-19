@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     padding: 0px;
     margin: 0px;
 }
@@ -28,22 +29,43 @@ body {
 }
 
 #introduction {
-    background-image: url('./images/introduction-background.jpg');
+    background: black;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(129, 196, 252, 0.8), rgba(57, 134, 206, 0.8)), url('./images/introduction-background.jpg');
+    background: linear-gradient(rgba(129, 196, 252, 0.8), rgba(57, 134, 206, 0.8)), url('./images/introduction-background.jpg'); /* The least supported option. */
+    width: 100vw;
     height: 800px;
     margin-bottom: 50px;
 }
 
 #hello {
-    padding-top: 450px;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    height: 100%;
+    width: 100%;
+    padding-top: 550px;
+    padding-left: 100px;
+    z-index: 2;
+}
+
+#my-name {
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 90px;
+}
+
+#job-description {
     color: #000000;
-    font-size: 80px;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 50px;
 }
 
 #social_links {
     height: 30px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #social_links a{
