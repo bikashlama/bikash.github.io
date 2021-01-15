@@ -8,11 +8,17 @@
     </head>
     <body>
         <div id="header">
-            <div id="menu">
+            <div id="menu" role="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Works</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog</a>
+                        <ul>
+                            <li><a href="#">AWS</a></li>
+                            <li><a href="#">Acumatica</a></li>
+                            <li><a href="#">Postgres</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -21,8 +27,13 @@
         <div id="main_container">
             <div id="introduction">
                 <div id="hello">
-                    <span id="my-name">Bikash Lama</span>
-                    <span id="job-description">An average &lt;&#47;CODER&gt;</span>
+                    <div class="profile-image-cropper">
+                        <img src="/images/profile.jpg" alt="avatar" class="profile-pic">
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <span id="my-name">BIKASH LAMA</span>
+                        <span id="job-description">&lt;DEVELOPER&#47;&gt;</span>
+                    </div>
                 </div>
             </div>
             <div id="social_links">
