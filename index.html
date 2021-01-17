@@ -1,52 +1,105 @@
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="layout.css" />
-        <script src="https://kit.fontawesome.com/24ae38cf6e.js" crossorigin="anonymous"></script>
-        <title>Bikash Lama</title>
-    </head>
-    <body>
-        <div id="header">
-            <div id="menu" role="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Blog</a>
-                        <ul>
-                            <li><a href="#">AWS</a></li>
-                            <li><a href="#">Acumatica</a></li>
-                            <li><a href="#">Postgres</a></li>
-                        </ul>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <script src="https://kit.fontawesome.com/24ae38cf6e.js" crossorigin="anonymous"></script>
+    <title>Bikash Lama</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="menu" role="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Blog</a>
+                    <ul>
+                        <li><a href="#">AWS</a></li>
+                        <li><a href="#">Acumatica</a></li>
+                        <li><a href="#">Postgres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="social_links">
+            <a href="https://www.linkedin.com/in/bikash-lama/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/bikashlama" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://stackoverflow.com/users/2398686/bikash-lama" target="_blank">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="main_container">
+        <div id="introduction">
+            <div id="hello">
+                <div class="profile-image-cropper">
+                    <img src="/images/profile.jpg" alt="avatar" class="profile-pic">
+                </div>
+                <div style="margin-top: 5px;">
+                    <span id="my-name">BIKASH LAMA</span>
+                    <span id="job-description">&lt;DEVELOPER&#47;&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div id="about_me">
+            <h1>About Me</h1>
+            <p>
+                Hello! I am softwared developer based in Sydney, Australia. I have been working in Software Development
+                for more than 8 years. I have experience in building web applications in .Net and NodeJS platforms.
+                <br />
+                Currently I am working for a company called <a href="https://www.gofar.co">GoFar</a>. Here I am working
+                on building and maintaining API with several other microservice components built in NodeJS and Python in
+                AWS Cloud that handles more than 3000 daily active users.<br />
+                I am a Good team player with experience in leading as a Project Manager managing a development team and
+                also have worked as a one man team handling projects on my own.<br />
+                My major technical skill stack contains NodeJS, C#, ASP.Net, Python, VueJS, SQL Server, Postgres,
+                Docker, AWS.
+            </p>
+        </div>
+        <div id="work_experiences">
+            <h1>Companies I have worked with</h1>
+            <div id="timeline-content">
+                <ul class="timeline">
+                    <li class="event" data-date="May 2019 - Present">
+                        <h3>GOFAR</h3>
+                        <p></p>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="event" data-date="Apr 2018 - Apr 2019">
+                        <h3>CON-LINQ ApS</h3>
+                        <p></p>
+                    </li>
+                    <li class="event" id="date" data-date="Oct 2016 - Apr 2019">
+                        <h3>Lucid Consulting LLC</h3>
+                        <p></p>
+                    </li>
+                    <li class="event" data-date="Dec 2016 - Oct 2017">
+                        <h3>Global Tranport Xpress ApS</h3>
+                        <p><p />
+                    </li>
+                    <li class="event" data-date="Jul 2015 - Sep 2016">
+                        <h3>WallBee ApS</h3>
+                        <p><p/>
+                    </li>
+                    <li class="event" data-date="Jan 2014 - Jun 2015">
+                        <h3>Agile IT Solutions</h3>
+                        <p><p />
+                    </li>
+                    <li class="event" data-date="Jun 2011 - Nov 2012">
+                        <h3>Sazu Technologies</h3>
+                        <p><p/>
+                    </li>
                 </ul>
             </div>
         </div>
+    </div>
+</body>
 
-        <div id="main_container">
-            <div id="introduction">
-                <div id="hello">
-                    <div class="profile-image-cropper">
-                        <img src="/images/profile.jpg" alt="avatar" class="profile-pic">
-                    </div>
-                    <div style="margin-top: 5px;">
-                        <span id="my-name">BIKASH LAMA</span>
-                        <span id="job-description">&lt;DEVELOPER&#47;&gt;</span>
-                    </div>
-                </div>
-            </div>
-            <div id="social_links">
-                <a href="https://www.linkedin.com/in/bikash-lama/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/bikashlama" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://stackoverflow.com/users/2398686/bikash-lama" target="_blank">
-                    <i class="fab fa-stack-overflow"></i>
-                </a>
-            </div>
-        </div>
-    </body>
 </html>
