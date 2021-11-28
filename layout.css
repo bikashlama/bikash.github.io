@@ -1,207 +1,39 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 0px;
-    margin: 0px;
+body{
+    font-family: 'Roboto';
 }
 
-#header {
-    height: 50px;
+
+#main-content{
+    width: 960px;
 }
 
-#menu {
-    float: left;
+#intro
+{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#menu ul {
-    list-style-type: none;
-    font-size: 16px;
+
+#social-links {
+    text-align: center;
+    font-size: 1.8em;
 }
 
-#menu ul li {
-    float: left;
-    margin-right: 20px;
-    display: block;
-    transition-duration: 0.5s;
-}
-
-#menu ul li a {
-    color: #000000;
-    text-decoration: none;
-}
-
-#menu ul li:hover {
-    cursor: pointer;
-}
-
-#menu ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-}
-
-#menu ul li:hover > ul,
-ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-#menu ul li ul li {
-    clear: both;
-    width: 100%;
-}
-
-#introduction {
-    background: black;
-    overflow: hidden;
-    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/introduction-background.jpg');
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/introduction-background.jpg'); /* The least supported option. */
-    height: 600px;
-}
-
-#hello {
-    background: rgba(255, 255, 255, 0.25);
-    height: 100%;
-    width: 100%;
-    padding-top: 400px;
-    padding-left: 50px;
-    z-index: 2;
-}
-
-#my-name {
-    color: #FFFFFF;
-    font-family: 'Raleway', sans-serif;
-    display: block;
-    font-size: 55px;
-}
-
-#job-description {
-    color: #C33764;
-    font-family: 'Raleway', sans-serif;
-    display: block;
-    font-size: 50px;
-}
-
-#social_links {
-    margin: auto;
-    float: right;
-    line-height: 50px;
-    font-size: 25px;
-    padding-right: 10px;
-}
-
-#social_links a{
-    color: #000000;
-    text-decoration: none;
+#social-links a {
+    color:#000000;
     margin-right: 10px;
 }
 
-#about_me{
-    background-color: black;
-    padding: 15px;
+
+#social-links a:hover {
+    text-decoration: none;
 }
 
-
-
-#about_me h1{
-    margin-top: 5px;
-    margin-bottom: 15px;
-    color: #C33764;
-    font-size: 30px;
+#about-me {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#work_experiences {
-    padding: 15px;
+#contact-me {
+    text-align: center;
 }
-
-#work_experiences h1 {
-    color: #C33764;
-    font-size: 30px;
-}
-
-#about_me p{
-    color: #FFFFFF;
-    padding: 18px;
-    font-size: 15px;
-    margin: 0px;
-    padding: 0px;
-    line-height: 20px;
-}
-
-.profile-image-cropper {
-    float: left;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-.profile-pic {
-  display: inline;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-}
-
-.timeline {
-    border-left: 4px solid #C33764;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-    background: rgba(255, 255, 255, 0.03);
-    margin: auto;
-    position: relative;
-    line-height: 1.4em;
-    padding: 50px;
-    list-style: none;
-    text-align: left;
-    max-width: 45%;
-  }
-  .timeline h1 {
-    font-weight: 100;
-    font-size: 1.4em;
-  }
-  .timeline h2,
-  .timeline h3 {
-    font-weight: 400;
-  }
-  .timeline .event {
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-    padding-bottom: 25px;
-    position: relative;
-  }
-  .timeline .event:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none;
-  }
-  .timeline .event:before,
-  .timeline .event:after {
-    position: absolute;
-    display: block;
-    top: 0;
-  }
-  .timeline .event:before {
-    left: -250px;
-    content: attr(data-date);
-    text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
-    min-width: 120px;
-  }
-  .timeline .event:after {
-    box-shadow: 0 0 0 4px #C33764;
-    left: -57.85px;
-    background: #313534;
-    border-radius: 50%;
-    height: 11px;
-    width: 11px;
-    content: "";
-    top: 5px;
-  }
